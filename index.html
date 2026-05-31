@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Speech to Text <span>Converter</span></h1>
+
+        <textarea
+            id="data"
+            placeholder="Speak something..."
+        ></textarea>
+
+        <div class="row">
+
+            <select id="language">
+                <option value="en-US">English (US)</option>
+                <option value="en-GB" selected>English (UK)</option>
+                <option value="hi-IN">Hindi (India)</option>
+                <option value="es-ES">Spanish (Spain)</option>
+                <option value="fr-FR">French</option>
+                <option value="de-DE">German</option>
+            </select>
+
+            <div class="buttons">
+                <button id="startBtn">🎤 Start</button>
+                <button id="stopBtn" class="stop-btn">⛔ Stop</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
